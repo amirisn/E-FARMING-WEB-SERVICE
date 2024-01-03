@@ -1,0 +1,110 @@
+
+.consulting{
+   width:100%;
+   height:300px;
+   background-image:url('../images/consulting.jpg');
+   background-size:cover;
+   background-position:bottom;
+}
+.contain{
+   width:100%;
+}
+.contain h1{
+   font-size:50px
+}
+.about{
+   padding:4%;
+   width:100%;
+   height:auto;
+   background-color:#fff;
+}
+.about .left{
+   float:left;
+   width:50%;
+   display:inline-block;
+}
+.about .right{
+   width:50%;
+   display:inline-block;
+}
+.about .right img{
+   margin-top: 65px;
+   width:100%;
+   border-radius: 18px;
+
+ 
+
+  
+}
+.about .left h1{
+   text-align:center;
+   color:#000;
+   margin:0 0 10px 0;
+}
+.about .left h2{
+   text-align:center; 
+}
+
+.t{
+   border-left: 5px solid rgb(83, 87, 83);
+   height: 500px;
+   position: absolute;
+   left: 50%;
+   margin-left: 3px;
+   top: 420px;
+
+}
+
+.about .left hr{
+   border-top: 0px;
+   border-bottom:none;
+}
+.about .left p{
+   font-size:1rem;
+   margin:40px auto;
+   width:80%
+}
+
+/* media */
+@media(max-width:1200px){
+   .mission .right p{
+      font-size:.8rem;
+      margin:20px auto;
+   }
+   .about .left p{
+      font-size:.8rem;
+      margin:20px auto;
+   }
+}
+
+
+
+
+
+
+@media(max-width:992px){
+   .about .left{
+   width:100%; 
+}
+   .about .right{
+   width:100%; 
+}
+      .mission .left{
+   width:100%; 
+}
+   .mission .right{
+   width:100%; 
+}
+   .team .card{ 
+   width:40%;
+}   
+}
+
+@media(max-width:768px){
+      .team .card{ 
+   width:100%;
+} 
+   nav{
+      height:80px;
+   }
+}

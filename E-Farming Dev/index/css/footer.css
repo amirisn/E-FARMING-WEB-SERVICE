@@ -1,0 +1,116 @@
+.footer {
+  background-color: #242424;
+  padding: 4.375rem 0;
+}
+
+.footerContainer {
+  max-width: 73.3rem;
+  /* background-color: red; */
+  margin: auto;
+}
+
+.footerRow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footerColumn {
+  width: 25%;
+  padding: 0 4.04rem;
+}
+
+.footerColumn h4 {
+  font-size: 1.13rem;
+  color: #ffffff;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-bottom: 1.9rem;
+  position: relative;
+}
+
+.footerColumn h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.6rem;
+  background-color: #e91e63;
+  height: 0.2rem;
+  box-sizing: border-box;
+  width: 2rem;
+}
+
+.footerColumn ul {
+  list-style: none;
+}
+
+.footerColumn ul li:not(:last-child) {
+  margin-bottom: 0.63rem;
+}
+
+.footerColumn ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.footerColumn ul li a:hover {
+  color: #ffffff;
+  padding-left: 0.5rem;
+}
+
+.mediaIcos a {
+  display: inline-block;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: rgb(255, 255, 255, 0.2);
+  margin: 0 0.63rem 0.63rem 0;
+  text-align: center;
+  line-height: 2.5rem;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.mediaIcos a:hover {
+  color: #242424;
+  background-color: #ffffff;
+}
+
+/* STARTING THE RESPONSIVE VIEW */
+
+@media (max-width: 767px) {
+  .footerColumn {
+    width: 50%;
+    margin-bottom: 0.94rem;
+  }
+
+  .mediaIcos a:hover {
+    color: #242424;
+    background-color: #ffffff;
+  }
+
+  .footerColumn ul li a:hover {
+    color: #ffffff;
+    padding-left: 0.5rem;
+  }
+}
+
+@media (max-width: 574px) {
+  .footerColumn {
+    width: 100%;
+  }
+
+  .mediaIcos a:hover {
+    color: #242424;
+    background-color: #ffffff;
+  }
+
+  .footerColumn ul li a:hover {
+    color: #ffffff;
+    padding-left: 0.5rem;
+  }
+}
